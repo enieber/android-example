@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "915880343826",
+    "firebase_url": "https://veicle-6b629.firebaseio.com",
+    "project_id": "veicle-6b629",
+    "storage_bucket": "veicle-6b629.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915880343826:android:de56910d509247f0",
+        "android_client_info": {
+          "package_name": "com.example.programacaoapp.veicle_revend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915880343826-ittqgfttcp4dr40d3pme04l83b3t7nmm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.programacaoapp.veicle_revend",
+            "certificate_hash": "F2AC7515446669D606F5619BE97E899B56AD6A23"
+          }
+        },
+        {
+          "client_id": "915880343826-uu694pmvehlocukkr738a7b1d0moju2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDIV90dl0z2BT8DhaZEitSYzecpdAKqrY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915880343826-uu694pmvehlocukkr738a7b1d0moju2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
