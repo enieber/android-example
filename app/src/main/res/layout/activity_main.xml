@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,56 +10,93 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.programacaoapp.veicle_revend.MainActivity">
 
-    <TextView
-        android:id="@+id/current_speed_value"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00b0e3"
-        android:textColor="#FFFFFF"
-        android:textSize="50sp"
-        android:textStyle="normal"
-        android:gravity="center"
-        android:padding="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"/>
-    <TextView
-        android:id="@+id/current_speed_value_title"
-        android:text="current value(rpm)"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00b0e3"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        android:gravity="center"
-        android:padding="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_below="@+id/current_speed_value"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="2"
-        android:layout_below="@+id/current_speed_value_title">
-        <Button
-            android:id="@+id/brake"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Brake"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="5dp"
-            android:background="#FF4444"
-            android:textColor="#FFFFFF"
-            android:layout_margin="5dp"
-            android:onClick="callBrake"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="Increase speed"
-            android:background="#669900"
-            android:textColor="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/current_speed_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#00b0e3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/current_speed_value_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/current_speed_value"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#00b0e3"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="current value(rpm)"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="5dp"
-            android:onClick="callIncrease"/>
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/fl_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/current_speed_value_title"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/brake"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FF4444"
+                android:onClick="callBrake"
+                android:padding="5dp"
+                android:text="Brake"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#669900"
+                android:onClick="callIncrease"
+                android:padding="5dp"
+                android:text="Increase speed"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
     </LinearLayout>
+
 </RelativeLayout>
